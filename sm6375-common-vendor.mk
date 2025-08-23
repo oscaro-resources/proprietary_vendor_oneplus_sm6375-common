@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_conf_ref \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/nfc/nfc_fw_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_fw_ref \
@@ -991,7 +990,6 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
-    manifest_performance_aidl.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1063,7 +1061,6 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
-    vendor-oplus-hardware-performance-V1-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \

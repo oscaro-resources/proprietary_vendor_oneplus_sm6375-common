@@ -14586,15 +14586,6 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "manifest_performance_aidl.xml",
-    owner: "oneplus",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_performance_aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "adpl",
     owner: "oneplus",
@@ -16744,40 +16735,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libwvhidl",
                 "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor-oplus-hardware-performance-V1-service",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service",
-            ],
-            shared_libs: [
-                "libprocessgroup_shim",
-                "libbase_shim",
-                "vendor.oplus.hardware.performance-V1-ndk_platform",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libbinder_ndk",
-                "libprocessgroup",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",

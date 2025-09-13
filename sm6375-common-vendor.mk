@@ -947,7 +947,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
-    vendor.oplus.hardware.urcc-V1-ndk_platform \
     odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so \
     odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
     odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so \

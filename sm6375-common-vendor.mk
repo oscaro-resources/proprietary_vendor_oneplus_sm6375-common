@@ -938,7 +938,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
-    liboplus-uah-client \
     liboplus_service \
     libwvhidl \
     libwvdrmengine \

@@ -89,14 +89,18 @@ case "$target" in
         case "$soc_hwid" in
             507|565)
                 setprop vendor.media.target_variant "_blair"
-                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                if [ $build_codename -le "14" ]; then
+                    setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                fi
                 ;;
             578)
                 setprop vendor.media.target_variant "_blair_lite"
                 ;;
             454|472)
                 setprop vendor.media.target_variant "_holi"
-                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                if [ $build_codename -le "14" ]; then
+                    setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                fi
                 ;;
         esac
         ;;

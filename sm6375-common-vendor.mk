@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/oneplus/sm6375-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_conf_ref \
     vendor/oneplus/sm6375-common/proprietary/odm/etc/nfc/nfc_fw_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_fw_ref \
@@ -484,15 +485,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm6375-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
-    btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
     libC2D2 \
@@ -500,8 +498,6 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libVkLayer_q3dtools \
     libadreno_utils \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libc2d30_bltlib \
     libcdsp_default_listener \
     libcdsprpc \
@@ -525,13 +521,14 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsysmon_cdsp_skel \
     libthermalclient \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
+    btaudio_offload_if \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libFileMux_proprietary \
     libacdb-fts \
     libacdbloader \
@@ -541,6 +538,8 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudio_log_utils \
     libaudioparsers \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
@@ -607,7 +606,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
@@ -795,6 +793,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -942,6 +942,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.radio@1.0 \
+    vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
+    vendor.oplus.hardware.stability.oplus_project@1.0 \
     odm_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so \
     odm_lib_rfsa_adsp_libVDHexagonBlurless_v2_skel_so \
     odm_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so \
@@ -989,6 +991,7 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor.xml \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_oplus_stability_project_aidl.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -1060,6 +1063,7 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.oplus.hardware.stability.oplus_project-V1-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \

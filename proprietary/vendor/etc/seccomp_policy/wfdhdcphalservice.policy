@@ -66,4 +66,3 @@ setpriority: 1
 getdents64: 1
 dup: 1
 mremap:1
-gettid: 1

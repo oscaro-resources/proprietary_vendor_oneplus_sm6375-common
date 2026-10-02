@@ -55,8 +55,6 @@
             // maximum decoder output rate if it is Nuplayer path and
             // player sets max refresh rate
             "max_supported_render_rate": 120,
-            // maximum all intra frame rate
-            "max_supported_all_intra_framerate": 60,
             // control to force enable linear color format for encoder
             // if this is enable, then encoder will ask camera via
             // consumer flag to inform usage of linear color format.
@@ -87,7 +85,7 @@
             //MULTIMEDIA.MEDIASERVER.PLAYER.bugfix 5064336,2023/01/31,App background freeze function optimization
             //"max_retry_alloc_output_timeout": 0,
             //#else OPLUS_BUG_COMPATIBILITY
-            "max_retry_alloc_output_timeout": 0,
+            "max_retry_alloc_output_timeout": 2000,
             //#endif OPLUS_BUG_COMPATIBILITY
             // override default primaries to BT709 for >=UHD decode
             "default_primaries_override" : 0,

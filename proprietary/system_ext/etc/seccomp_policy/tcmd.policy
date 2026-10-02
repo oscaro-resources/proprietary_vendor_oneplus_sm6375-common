@@ -70,4 +70,3 @@ clock_gettime: 1
 gettid: 1
 rt_tgsigqueueinfo: 1
 nanosleep: 1
-madvise: 1
